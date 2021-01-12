@@ -1,0 +1,43 @@
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Nunito', sans-serif;
+}
+/*navbar*/
+.navbar{
+    height: 11%;
+}
+#navbarNav li a:hover{
+    color: dodgerblue;
+}
+#navbarNav a{
+    font-size:16px;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+/* store margin*/
+#store{
+    margin-right: 5%;
+    margin-left: 5%;
+}
+/*heart icons*/
+#heart {
+  color: grey;  
+  font-size: 20px;
+  margin-left: 30%;
+}
+#heart.red {
+  color: red;
+}
+#secondheart {
+  color: grey;  
+  font-size: 20px;
+  margin-left: 30%;
+}
+#secondheart.red {
+  color: red;
+}

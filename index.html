@@ -1,0 +1,348 @@
+<!Doctype html>
+<html lang="en">
+<head>
+    <!-- page title -->
+    <title>Shopping cart</title>
+    <!-- head icon -->
+    <link rel="icon" type="image/png" href="images/pie.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- css link -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- bootstrap link -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- font awesome -->
+    <link href="https://use.fontawesome.com/releases/v5.0.4/css/all.css" rel="stylesheet">
+    <!--google font-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;1,200;1,400;1,600&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!--header-->
+    <header>
+        <!-- nav bar -->
+        <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+                <!-- logo -->
+                <a class="navbar-brand" href="#">
+                    <img src="images/pie.png">
+                </a>
+                <!--nav list-->
+                <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                    <ul class="navbar-nav" style="margin-right: 5%;">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about">about us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#store">our store</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- model button -->
+                <div class="nav-info-items d-none d-lg-flex ">
+                    <!-- single info -->
+                    <div class="cart-info"
+                        class="nav-info align-items-center cart-info d-flex justify-content-between mx-lg-5">
+                        <div class="col">
+                            <button type="button" class="btn btn-primary" data-toggle="modal"
+                                data-target="#exampleModal"><strong>Cart</strong>
+                                <img src="images/panier.png">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <!-- carousel section -->
+        <section class="caroussel">
+            <!--bootstrap caroussel -->
+            <div class="container-fluid">
+                <div class="carousel slide" id="main-carousel" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-target="#main-carousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#main-carousel" data-slide-to="1"></li>
+                        <li data-target="#main-carousel" data-slide-to="2"></li>
+                    </ol>
+                    <!--carousel slides -->
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img class="d-block img-fluid" src="images/food background1.jpg" alt=""
+                                style="height:630px; width: 100%;">
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block img-fluid" src="images/food background2.jpg" alt=""
+                                style="height:630px;width: 100%;">
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block img-fluid" src="images/food background5.jpg" alt=""
+                                style="height:630px;width: 100%;">
+                        </div>
+                    </div>
+                    <!-- carousel prev and next buttons -->
+                    <a href="#main-carousel" class="carousel-control-prev" data-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                        <span class="sr-only" aria-hidden="true">Prev</span>
+                    </a>
+                    <a href="#main-carousel" class="carousel-control-next" data-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                        <span class="sr-only" aria-hidden="true">Next</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <!--about section-->
+        <section id="about" class="about py-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-10 mx-auto col-md-6 my-5">
+                        <h1 class="text-capitalize">about us</h1>
+                        <p class="my-4 text-muted w-75">Feeling hungry? in need for a delecious and healthy food
+                            YEAH you have come to the right place !
+                            choose from our menu and we will deliver it to you as soon as you can ever imagine!
+                        </p>
+                    </div>
+                    <div class="col-10 mx-auto col-md-6 align-self-center my-5">
+                        <div class="about-img__container">
+                            <img src="images/food delivery.jpg" class="img-fluid" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- store section -->
+        <section id="store" class="store py-5">
+            <!-- store rows -->
+            <div class="row">
+                <!-- single item -->
+                <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3">
+                    <div class="card ">
+                        <img src="images/pizza pepperoni.jpg" class="card-img-top store-img" alt="pepperoni pizzaaa">
+                        <div class="card-body">
+                            <div class="card-text d-flex justify-content-around text-capitalize">
+                                <h5>pizza pepperoni</h5>
+                                <h5>$<class="font-weight-bold">12</strong>
+                                </h5>
+                                <button type="button" class="btn btn-primary">Taste Me</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- single item -->
+                <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3">
+                    <div class="card ">
+                        <img src="images/taliatelli.jpg" class="card-img-top store-img" alt="pasta">
+                        <div class="card-body">
+                            <div class="card-text d-flex justify-content-around text-capitalize">
+                                <h5>Pasta</h5>
+                                <h5>$<class="font-weight-bold">15</strong>
+                                </h5>
+                                <button type="button" class="btn btn-primary">Taste Me</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- single item -->
+                <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3">
+                    <div class="card ">
+                        <img src="images/pizza margeritta.jpg" class="card-img-top store-img" alt="margeritta">
+                        <div class="card-body">
+                            <div class="card-text d-flex justify-content-around text-capitalize">
+                                <h5>pizza margeritta</h5>
+                                <h5>$<class="font-weight-bold">12</strong>
+                                </h5>
+                                <button type="button" class="btn btn-primary">Taste Me</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- single item -->
+                <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3">
+                    <div class="card ">
+                        <img src="images/salmon.jpg" class="card-img-top store-img" alt="salmon">
+                        <div class="card-body">
+                            <div class="card-text d-flex justify-content-around text-capitalize">
+                                <h5>salmon</h5>
+                                <h5>$<class="font-weight-bold">20</strong></h5>
+                                <button type="button" class="btn btn-primary">Taste Me</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- single item -->
+                <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3">
+                    <div class="card ">
+                        <img src="images/dumpling.jpg" class="card-img-top store-img" alt="dumpling">
+                        <div class="card-body">
+                            <div class="card-text d-flex justify-content-around text-capitalize">
+                                <h5>dumpling</h5>
+                                <h5>$<class="font-weight-bold">18</strong></h5>
+                                <button type="button" class="btn btn-primary">Taste Me</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- single item -->
+                <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3">
+                    <div class="card ">
+                        <img src="images/fell.PNG" class="card-img-top store-img" alt="tunisian pasta"
+                            style="height: 255px;">
+                        <div class="card-body">
+                            <div class="card-text d-flex justify-content-around text-capitalize">
+                                <h5>tunisian pasta</h5>
+                                <h5>$<class="font-weight-bold">8</strong>
+                                </h5>
+                                <button type="button" class="btn btn-primary">Taste Me</button>>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    <!-- Button trigger modal -->
+    <section class="modal-section">
+        <!-- modal section -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Your cart items</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="card mb-4 shadow-sm">
+                        <div class=".shopping-cart">
+                            <div class="card-header">
+                                <h2>Cart</h2>
+                            </div>
+                            <div class="card-body">
+                                <table class="table"style="width:150px">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">Image</th>
+                                            <th scope="col">price</th>
+                                            <th scope="col">Quantity</th>
+                                            <th scope="col">delete</th>
+                                        </tr>
+                                    </thead>
+                                    <tfoot class=".shopping-row">
+                                        <td><img src="images/salmon.jpg" style="width: 150px;"></td>
+                                        <td><span class="shop-price">5</span>$</td>
+                                        <td><button class="plus">+</button>
+                                            <span class="qte">1</span>
+                                            <button class="moins">-</button>
+                                        <td>
+                                            <button class=" btn-block btn-outline-primary">remove</button>
+                                            
+                                        </td>
+                                        <td><i class="fa fa-heart" id="secondheart" style="margin-left: -30%;"></i></td>
+                                    </tfoot>
+                                    <tfoot class=".shopping-row">
+                                        <td><img src="images/salmon.jpg" style="width: 150px;"></td>
+                                        <td ><span class="shop-price">5</span>$</td>
+                                        <td><button class="plus">+</button>
+                                        <span class="qte" >1</span>
+                                        <button class="moins">-</button>
+                                        <td>
+                                            <button class="btn-block btn-outline-primary">remove</button>
+                                            
+                                        </td>  
+                                        <td><i class="fa fa-heart" id="heart" style="margin-left: -30%;"></i></td>       
+                                    </tfoot>
+                                    <div class="cart-total d-flex justify-content-center">
+                                        <strong class="cart-total-title" style="font-size: 20px;margin-top: 5%;">Total = </strong>
+                                        <span class="total-price" style="font-size: 20px;margin-top: 5%;">10</span>$
+                                    </div>
+                                </table>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close cart</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+    </section>
+    <footer class="bg-dark text-white text-center text-lg-start">
+        <!-- Grid container -->
+        <div class="container p-4">
+            <!--Grid row-->
+            <div class="row">
+                <!--Grid column-->
+                <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+                    <h5 class="text-uppercase"></h5>
+                    <img src="images/pie.png" style="margin-left: -100%;">
+                </div>
+                <!--Grid column-->
+    
+                <!--Grid column-->
+                <div class="col-lg-3 col-md-6 mb-4 mb-md-0" style="margin-left: -30%;text-align: left;">
+                    <h5 class="text-uppercase">Quick Links</h5>
+    
+                    <ul class="list-unstyled mb-0">
+                        <li>
+                            <a href="#" class="text-white">Home</a>
+                        </li>
+                        <li>
+                            <a href="#about" class="text-white">About Us</a>
+                        </li>
+                        <li>
+                            <a href="#store" class="text-white">Our store</a>
+                        </li>
+                    </ul>
+                </div>
+                <!--Grid column-->
+    
+                <!--Grid column-->
+                <div class="col-lg-3 col-md-6 mb-4 mb-md-0" style="margin-left: 5%;text-align: left;">
+                    <h5 class="text-uppercase mb-0">Contact</h5>
+    
+                    <ul class="list-unstyled">
+                        <li>
+                            <a href="#!" class="text-white"><i class="fas fa-envelope-square"
+                                    style="margin-right: 5%;"></i>food@gmail.com</a>
+                        </li>
+                        <li>
+                            <a href="#!" class="text-white"><i class="fas fa-phone"
+                                    style="margin-right: 5%;"></i>+00253186333</a>
+                        </li>
+                        <li>
+                            <a href="#!" class="text-white"><i class="fab fa-facebook-f"
+                                    style="margin-right: 5%;"></i>yummy</a>
+                        </li>
+                        <li>
+                            <a href="#!" class="text-white"><i class="fab fa-instagram"
+                                    style="margin-right: 5%;"></i>yummy</a>
+                        </li>
+                    </ul>
+                </div>
+                <!--Grid column-->
+                <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                    <h5 class="text-uppercase mb-0">newsletter</h5>
+                    <p>Submit to our newsletter <br> enter your email:</p>
+                    <input type="email" id="email" name="email" style="border-radius: 15px;">
+                </div>
+                <!--Grid row-->
+            </div>
+    </footer>
+                <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+                    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+                    crossorigin="anonymous"></script>
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+                    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+                    crossorigin="anonymous"></script>
+                <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+                    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+                    crossorigin="anonymous"></script>
+                    <script src="index.js"></script>
+</body>
+</html>
